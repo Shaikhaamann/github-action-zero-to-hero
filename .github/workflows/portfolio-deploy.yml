@@ -12,18 +12,28 @@ jobs:
     deploy:
         runs-on: ubuntu-lastest
 
+        environment:
+            name: github-pages
+            url: ${{steps.deployment.outputs.page_url}}
+              
+
         steps:
             #get access to your protfolio code via pre-build action
+            #step 1
             - name: Checkout Code
               uses: actions/checkout@v4
 
             # setup GitHub pages
+            #step 2
             - name: setup GitHub pages
               uses: actions/configure-pages@v4
 
             #static code ARTIFACTES
+            #step 3
             - name: Upload static files
               uses: actions/upload=pages=artifact@v4
-            
+              
+              #make page live
+              #step 4
             - name: Deploy to GitHub pages
               uses: actions/deploy-pages@v4
