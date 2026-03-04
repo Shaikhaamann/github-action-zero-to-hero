@@ -1,0 +1,29 @@
+name: protfolio
+
+on:
+    push:
+        branches: [main]
+
+permissions:
+    pages: write
+    id-token: write
+
+jobs:
+    deploy:
+        runs-on: ubuntu-lastest
+
+        steps:
+            #get access to your protfolio code via pre-build action
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            # setup GitHub pages
+            - name: setup GitHub pages
+              uses: actions/configure-pages@v4
+
+            #static code ARTIFACTES
+            - name: Upload static files
+              uses: actions/upload=pages=artifact@v4
+            
+            - name: Deploy to GitHub pages
+              uses: actions/deploy-pages@v4
