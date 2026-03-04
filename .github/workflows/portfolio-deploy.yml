@@ -3,6 +3,7 @@ name: protfolio
 on:
     push:
         branches: [main]
+    workflow_dispatch:
 
 permissions:
     pages: write
@@ -32,6 +33,8 @@ jobs:
             #step 3
             - name: Upload static files
               uses: actions/upload=pages=artifact@v4
+              with:
+                path: "."
               
               #make page live
               #step 4
