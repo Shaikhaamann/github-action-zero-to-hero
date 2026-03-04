@@ -50,10 +50,6 @@ Workflow file location:
 
 ---
 
-## 📂 Project Structure
-
-
-
 
 ---
 
