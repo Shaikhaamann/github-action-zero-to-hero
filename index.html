@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aaman Shaikh | Portfolio</title>
+<title>Aaman Shaikh | DevOps Portfolio</title>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
@@ -18,7 +18,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
 color:#fff;
 }
 
@@ -29,7 +29,7 @@ margin:auto;
 }
 
 section{
-padding:70px 0;
+padding:80px 0;
 }
 
 h2{
@@ -56,7 +56,7 @@ color:#38bdf8;
 .nav{
 list-style:none;
 display:flex;
-gap:20px;
+gap:25px;
 }
 
 .nav a{
@@ -76,6 +76,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 flex-wrap:wrap;
+gap:40px;
 }
 
 .hero-text{
@@ -83,7 +84,7 @@ max-width:500px;
 }
 
 .hero-text h1{
-font-size:36px;
+font-size:38px;
 margin-bottom:10px;
 }
 
@@ -95,6 +96,20 @@ color:#38bdf8;
 margin:20px 0;
 line-height:1.6;
 }
+
+.hero-img img{
+width:260px;
+border-radius:50%;
+border:4px solid #38bdf8;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:.3s;
+}
+
+.hero-img img:hover{
+transform:scale(1.05);
+}
+
+/* BUTTON */
 
 .btn{
 display:inline-block;
@@ -173,7 +188,7 @@ transform:translateY(-5px);
 }
 
 .service i{
-font-size:26px;
+font-size:28px;
 color:#38bdf8;
 margin-bottom:10px;
 }
@@ -217,6 +232,8 @@ background:#020617;
 margin-top:40px;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
 .hero{
@@ -240,8 +257,6 @@ display:none;
 <body>
 
 <div class="container">
-
-<!-- NAVBAR -->
 
 <div class="navbar">
 
@@ -273,12 +288,16 @@ display:none;
 
 <p>
 MCA student passionate about DevOps, cloud computing and automation.
-I work with Docker, Kubernetes, Jenkins, Terraform and AWS to build
-scalable and reliable systems.
+Experienced with Docker, Kubernetes, Jenkins, Terraform and AWS
+for building scalable and reliable systems.
 </p>
 
-<a href="#contact" class="btn">Hire Me</a>
+<a href="#contact" class="btn">Contact Me</a>
 
+</div>
+
+<div class="hero-img">
+<img src="profile.jpg" alt="Aaman Shaikh">
 </div>
 
 </div>
@@ -307,7 +326,7 @@ cloud infrastructure and monitoring tools.
 
 <p>
 I enjoy building scalable applications and automating deployments
-using modern DevOps tools.
+using modern DevOps technologies.
 </p>
 
 </div>
@@ -316,22 +335,22 @@ using modern DevOps tools.
 
 <div class="skill">
 <span>Docker</span>
-<div class="bar"><div style="width:80%"></div></div>
+<div class="bar"><div style="width:85%"></div></div>
 </div>
 
 <div class="skill">
 <span>Jenkins</span>
-<div class="bar"><div style="width:75%"></div></div>
+<div class="bar"><div style="width:80%"></div></div>
 </div>
 
 <div class="skill">
 <span>Kubernetes</span>
-<div class="bar"><div style="width:70%"></div></div>
+<div class="bar"><div style="width:75%"></div></div>
 </div>
 
 <div class="skill">
 <span>AWS</span>
-<div class="bar"><div style="width:70%"></div></div>
+<div class="bar"><div style="width:75%"></div></div>
 </div>
 
 </div>
@@ -356,20 +375,20 @@ using modern DevOps tools.
 
 <div class="service">
 <i class="fa fa-server"></i>
-<h4>DevOps Setup</h4>
-<p>CI/CD pipelines with Jenkins and GitHub Actions.</p>
+<h4>CI/CD Automation</h4>
+<p>Building CI/CD pipelines using Jenkins and GitHub Actions.</p>
 </div>
 
 <div class="service">
 <i class="fa fa-cloud"></i>
 <h4>Cloud Deployment</h4>
-<p>Deploy scalable applications using AWS services.</p>
+<p>Deploy scalable cloud applications using AWS.</p>
 </div>
 
 <div class="service">
 <i class="fa fa-docker"></i>
 <h4>Containerization</h4>
-<p>Application packaging and deployment using Docker.</p>
+<p>Packaging applications with Docker and Kubernetes.</p>
 </div>
 
 </div>
@@ -390,20 +409,20 @@ using modern DevOps tools.
 
 <div class="project">
 <h4>AI Powered DevOps Banking App</h4>
-<p>Spring Boot banking app deployed using Docker, Kubernetes,
-Terraform and monitored using Prometheus & Grafana.</p>
+<p>Spring Boot banking application deployed using Docker,
+Kubernetes, Terraform and monitored with Prometheus & Grafana.</p>
 </div>
 
 <div class="project">
-<h4>Two Tier Flask Application</h4>
-<p>Flask web app with MySQL deployed using Docker, Jenkins CI/CD
-and AWS EC2.</p>
+<h4>Two Tier Flask Deployment</h4>
+<p>Flask + MySQL application deployed using Docker,
+Jenkins CI/CD and AWS EC2.</p>
 </div>
 
 <div class="project">
 <h4>Video Meeting Platform</h4>
-<p>Real time meeting app built with MERN stack and deployed using
-Docker pipelines.</p>
+<p>Real-time meeting platform built using MERN stack
+with Docker deployment pipeline.</p>
 </div>
 
 </div>
@@ -428,7 +447,7 @@ Docker pipelines.</p>
 
 <br>
 
-<a class="btn" href="https://www.linkedin.com">LinkedIn</a>
+<a class="btn" href="https://www.linkedin.com/in/aaman-shaikh-3a95ba235">LinkedIn</a>
 
 </div>
 
