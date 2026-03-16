@@ -15,7 +15,7 @@ jobs:
             - name: steup python 3.13
               uses: actions/setup-python@v5
               with:
-                python-version:"3.13"
+                python-version: "3.13"
 
             - name: install dependancies
               run: pip install -r requirment.txt
